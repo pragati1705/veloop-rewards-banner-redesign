@@ -1,11 +1,11 @@
 import React from 'react'
 import { Gift, ArrowLeftRight, Sparkles, ShieldCheck, Wallet, ChevronRight, ArrowUpRight, CircleCheck, Users, Coins, BadgeCheck, Ticket, Zap } from 'lucide-react'
 import styles from './App.module.css'
-import ReferEarnBanner from './ReferEarnBanner/ReferEarnBanner.jsx'
-import SwapCenterBanner from './SwapCenterBanner/SwapCenterBanner.jsx'
-import BonusVEsBanner from './BonusVEsBanner/BonusVEsBanner.jsx'
-import CaptchaTasksBanner from './CaptchaTasksBanner/CaptchaTasksBanner.jsx'
-import ExchangeCenterBanner from './ExchangeCenterBanner/ExchangeCenterBanner.jsx'
+import ReferEarnBanner from './ReferEarnBanner.jsx'
+import SwapCenterBanner from './SwapCenterBanner.jsx'
+import BonusVEsBanner from './BonusVEsBanner.jsx'
+import CaptchaTasksBanner from './CaptchaTasksBanner.jsx'
+import ExchangeCenterBanner from './ExchangeCenterBanner.jsx'
 
 function App() {
   const [active, setActive] = React.useState('Overview')
