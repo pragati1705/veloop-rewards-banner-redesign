@@ -1,6 +1,6 @@
 # VELOOP Rewards — Promotional Banner Redesign
 
-A responsive React frontend concept for VELOOP Rewards' banner redesign task. It includes five distinct promotional feature banners with a shared premium fintech visual system.
+A responsive React frontend concept for VELOOP Rewards featuring five promotional banners with a consistent, premium fintech design.
 
 ## Features
 - Refer & Earn
@@ -8,21 +8,23 @@ A responsive React frontend concept for VELOOP Rewards' banner redesign task. It
 - Bonus VEs
 - Captcha Tasks
 - Exchange Center
-- Full-width responsive layouts for desktop, tablet, and mobile
-- Dark navy app background (`#161827`) with restrained blue, gold, and neutral accents
+- Responsive desktop, tablet and mobile layouts
+- Dark navy background with blue, gold and neutral accents
 - Custom CSS illustrations and Lucide icons
-- Subtle motion, hover/active/focus states, and reduced-motion support
-- Separate React components and CSS Modules for each banner
-- No backend required; all content is demonstration UI and does not promise actual rewards
+- Interactive hover, focus and active states
+- Reduced-motion accessibility support
+- Reusable React components and CSS Modules
+- Demonstration UI only; no real transactions or guaranteed rewards
 
-## Tech stack
+## Tech Stack
 - React 18
 - Vite 6
 - Bootstrap 5
 - CSS Modules
 - Lucide React
 
-## Run locally
+## Run Locally
+
 Requires Node.js 18+ and npm.
 
 ```bash
@@ -30,53 +32,68 @@ npm install
 npm run dev
 ```
 
-Open the local URL shown in the terminal (usually `http://localhost:5173`).
+Open the local URL provided by Vite.
 
-## Production build
+## Production Build
+
 ```bash
 npm run build
 npm run preview
 ```
 
-The production build is generated in `dist/`.
+The production files are generated in `dist/`.
 
-## Deploy
+## Deployment
+
 ### Vercel
-1. Push this repository to GitHub.
-2. In Vercel, import the public GitHub repository.
-3. Keep the detected Vite settings: build command `npm run build`, output directory `dist`.
-4. Click **Deploy**. `vercel.json` contains these settings too.
+- Import this GitHub repository into Vercel.
+- Build command: `npm run build`
+- Output directory: `dist`
+- Deploy the project.
 
 ### Netlify
-1. Push this repository to GitHub.
-2. In Netlify, add a new site by importing the GitHub repository.
-3. Build command: `npm run build`; publish directory: `dist`.
-4. Deploy. `netlify.toml` contains these settings too.
+- Import this GitHub repository into Netlify.
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Deploy the project.
 
-## Project structure
+## Project Structure
+
 ```text
-src/
-├── components/
-│   ├── ReferEarnBanner/
-│   ├── SwapCenterBanner/
-│   ├── BonusVEsBanner/
-│   ├── CaptchaTasksBanner/
-│   └── ExchangeCenterBanner/
-├── styles/global.css
+veloop-rewards-banner-redesign/
 ├── App.jsx
 ├── App.module.css
-└── main.jsx
+├── ReferEarnBanner.jsx
+├── ReferEarnBanner.module.css
+├── SwapCenterBanner.jsx
+├── SwapCenterBanner.module.css
+├── BonusVEsBanner.jsx
+├── BonusVEsBanner.module.css
+├── CaptchaTasksBanner.jsx
+├── CaptchaTasksBanner.module.css
+├── ExchangeCenterBanner.jsx
+├── ExchangeCenterBanner.module.css
+├── global.css
+├── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+├── vercel.json
+├── netlify.toml
+├── .gitignore
+└── README.md
 ```
 
-## Interaction and content notes
-The banners are front-end design demonstrations. Reward values are intentionally not invented, and no backend transactions are performed. Current CTA interactions are demonstration interactions; connect them to official VELOOP routes if provided by the company.
+## Interaction and Content Notes
 
-## Submission checklist
-- [ ] Confirm the production build succeeds
-- [ ] Open the live site on desktop and mobile and check layout/console
-- [ ] Add screenshots of the final live site to this README if available
-- [ ] Submit the public GitHub repository URL
-- [ ] Submit the Vercel or Netlify live URL
+All banners are frontend demonstrations. Reward values are not presented as official offers, and no backend transactions are performed. CTA interactions are illustrative and should be connected to official VELOOP routes if provided.
+
+## Submission Checklist
+- [ ] Production build verified
+- [ ] Desktop and mobile layouts tested
+- [ ] Buttons and navigation tested
+- [ ] Public GitHub repository ready
+- [ ] Live deployment completed
 
 ## Author
 Pragati Chitnalli
