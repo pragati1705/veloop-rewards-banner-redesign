@@ -1,5 +1,5 @@
 import React from 'react'
-import { Gift, ArrowLeftRight, Sparkles, ShieldCheck, Wallet, ChevronRight, ArrowUpRight, CircleCheck, Users, Coins, BadgeCheck, Ticket, Zap } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import styles from './App.module.css'
 import ReferEarnBanner from './ReferEarnBanner.jsx'
 import SwapCenterBanner from './SwapCenterBanner.jsx'
@@ -7,21 +7,46 @@ import BonusVEsBanner from './BonusVEsBanner.jsx'
 import CaptchaTasksBanner from './CaptchaTasksBanner.jsx'
 import ExchangeCenterBanner from './ExchangeCenterBanner.jsx'
 
-function App() {
+const navigation = [
+  { label: 'Overview', target: 'top' },
+  { label: 'Earn', target: 'bonus-info' },
+  { label: 'Swap', target: 'swap-info' },
+  { label: 'Exchange', target: 'exchange-info' },
+]
+
+export default function App() {
   const [active, setActive] = React.useState('Overview')
-  const nav = ['Overview', 'Earn', 'Swap', 'Exchange']
+
+  const navigateTo = (item) => {
+    setActive(item.label)
+    document.getElementById(item.target)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    })
+  }
+
   return (
     <main className={styles.appShell}>
       <header className={styles.topbar}>
-        <a className={styles.brand} href="#top" aria-label="VELOOP Rewards home">
+        <a className={styles.brand} href="#top">
           <span className={styles.brandMark}><span /></span>
           <span>VELOOP<span className={styles.brandLight}>REWARDS</span></span>
         </a>
         <nav className={styles.nav} aria-label="Main navigation">
-          {nav.map(item => <button key={item} className={`${styles.navItem} ${active === item ? styles.navActive : ''}`} onClick={() => setActive(item)}>{item}</button>)}
+          {navigation.map(item => (
+            <button
+              key={item.label}
+              type="button"
+              aria-current={active === item.label ? 'page' : undefined}
+              className={`${styles.navItem} ${active === item.label ? styles.navActive : ''}`}
+              onClick={() => navigateTo(item)}
+            >
+              {item.label}
+            </button>
+          ))}
         </nav>
         <div className={styles.profile}>
-          <span className={styles.avatar}>P</span>
+          <span className={styles.avatar}>V</span>
           <span className={styles.profileName}>Your rewards</span>
         </div>
       </header>
@@ -47,12 +72,10 @@ function App() {
       </section>
 
       <footer className={styles.footer}>
-        <div className={styles.footerBrand}><span className={styles.brandMark}><span /></span> VELOOP REWARDS</div>
+        <div className={styles.footerBrand}>VELOOP REWARDS</div>
         <span>Designed for a smoother rewards experience.</span>
         <span className={styles.footerNote}>INTERNSHIP DESIGN CONCEPT</span>
       </footer>
     </main>
   )
 }
-
-export default App
