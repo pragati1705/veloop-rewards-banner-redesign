@@ -1,4 +1,3 @@
-}
 import React from 'react';
 import bannerImage from './file_00000000b0988211a3fa91e58cce0996.png';
 
