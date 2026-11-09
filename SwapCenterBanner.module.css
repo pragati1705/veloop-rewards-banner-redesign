@@ -1,1 +1,460 @@
-.banner{position:relative;isolation:isolate;overflow:hidden;min-height:420px;width:100%;border-radius:25px;border:1px solid rgba(255,255,255,.09);display:grid;grid-template-columns:1.04fr .96fr;align-items:center;padding:42px 6.3%;background:radial-gradient(ellipse at 78% 47%,rgba(106,154,190,.18),transparent 37%),linear-gradient(115deg,#1e2b3d,#1b2638 65%,#202b3b)}.content{position:relative;z-index:2;max-width:470px}.kicker{display:flex;align-items:center;gap:9px;color:#9fc5df;font-size:9px;font-weight:700;letter-spacing:.18em;margin-bottom:19px}.kickerIcon{display:grid;place-items:center;width:27px;height:27px;border-radius:9px;background:rgba(130,184,216,.13)}.content h2{font-family:Manrope,sans-serif;font-size:clamp(31px,3.2vw,44px);line-height:1.12;letter-spacing:-.05em;font-weight:700;color:#f5f5f7;margin:0 0 15px}.content h2 span{color:#a9d2e9}.content p{font-size:13px;line-height:1.8;color:#adb9c9;max-width:390px;margin:0 0 17px}.microcopy{display:flex;align-items:center;gap:8px;color:#a8c5d8;font-size:10px;margin-bottom:22px}.microcopy svg{color:#8ec4df}.cta{display:inline-flex;align-items:center;gap:15px;padding:12px 17px;border:1px solid #b6d8e9;border-radius:10px;background:#b7d7e6;color:#203042;font-size:12px;font-weight:700;transition:transform .22s,box-shadow .22s;cursor:pointer}.cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(126,184,214,.16);background:#d0e7f1}.visual{height:305px;position:relative;display:flex;align-items:center;justify-content:center}.backGlow{position:absolute;width:270px;height:270px;border:1px solid rgba(158,204,228,.17);border-radius:50%;box-shadow:0 0 0 28px rgba(158,204,228,.025),0 0 0 57px rgba(158,204,228,.02)}.balanceCard{position:absolute;width:225px;height:145px;border-radius:17px;padding:17px 18px;box-shadow:0 20px 35px rgba(5,12,23,.24);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(8px)}.cardA{top:46px;left:1%;transform:rotate(-8deg);background:linear-gradient(135deg,rgba(74,104,133,.97),rgba(38,59,82,.98));animation:floatA 5s ease-in-out infinite}.cardB{right:0;bottom:42px;transform:rotate(7deg);background:linear-gradient(135deg,rgba(191,207,211,.98),rgba(105,139,151,.98));color:#1e3541;animation:floatB 5.5s ease-in-out infinite}.cardTop{display:flex;justify-content:space-between;align-items:center;color:rgba(255,255,255,.72);font-size:8px;letter-spacing:.13em}.cardB .cardTop{color:#3b5965}.amount{font-family:Manrope,sans-serif;font-size:27px;font-weight:700;letter-spacing:-.04em;margin-top:12px;color:#f4f8fb}.cardB .amount{color:#203744}.amount small{font-size:11px;font-weight:600;letter-spacing:0}.cardLine{display:flex;gap:5px;margin-top:8px}.cardLine span{height:3px;border-radius:5px;background:#9cc3d9;width:27px}.cardLine span:nth-child(2){width:14px;opacity:.55}.cardLine span:nth-child(3){width:9px;opacity:.35}.cardFoot{position:absolute;bottom:13px;left:18px;font-size:9px;color:rgba(255,255,255,.58)}.cardB .cardFoot{color:#49636d}.progress{margin-top:11px;height:4px;border-radius:5px;background:rgba(32,55,68,.17);overflow:hidden}.progress span{display:block;width:70%;height:100%;background:#d5e7ec;border-radius:5px}.tokenIcon{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#e6f1f3;color:#486b79;font-weight:800;font-size:11px}.swapButton{position:absolute;z-index:3;left:50%;top:48%;transform:translate(-50%,-50%);width:54px;height:54px;display:grid;place-items:center;border-radius:17px;background:#d3e9f0;color:#264454;border:5px solid #263b4d;box-shadow:0 9px 20px rgba(0,0,0,.2);animation:swapPulse 3s ease-in-out infinite}.roundBadge{position:absolute;right:3%;top:7%;display:flex;align-items:center;gap:7px;background:rgba(30,53,70,.9);border:1px solid rgba(167,212,232,.2);border-radius:20px;padding:9px 12px;color:#b8dcec;font-size:9px;letter-spacing:.1em}.sparkle{position:absolute;left:13%;bottom:15%;color:#a6d7eb;font-size:24px}.bottomNote{position:absolute;left:6.3%;bottom:18px;color:#879bb0;font-size:9px;display:flex;align-items:center;gap:8px}.bottomNote span{width:5px;height:5px;border-radius:50%;background:#9fcce2}@keyframes floatA{0%,100%{translate:0 0}50%{translate:0 -7px}}@keyframes floatB{0%,100%{translate:0 0}50%{translate:0 7px}}@keyframes swapPulse{0%,100%{transform:translate(-50%,-50%) rotate(0)}50%{transform:translate(-50%,-50%) rotate(12deg)}}@media(max-width:760px){.banner{grid-template-columns:1fr;min-height:500px;padding:28px 27px 48px}.visual{grid-row:1;height:240px;margin-bottom:8px}.content{grid-row:2}.content h2{font-size:35px}.balanceCard{scale:.86}.cardA{left:0;top:25px}.cardB{right:0;bottom:22px}.backGlow{width:210px;height:210px}.bottomNote{left:27px;right:20px;bottom:17px}.roundBadge{right:0;top:0}}@media(max-width:420px){.banner{padding:24px 20px 48px;min-height:510px}.visual{height:220px}.content h2{font-size:31px}.content p{font-size:12px}.balanceCard{scale:.72}.cardA{left:-22px;top:25px}.cardB{right:-22px;bottom:15px}.swapButton{scale:.85}.bottomNote{left:20px;font-size:8px}}@media(prefers-reduced-motion:reduce){.banner *{animation:none!important;transition:none!important}}
+.banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 440px;
+  width: 100%;
+  border-radius: 26px;
+  border: 1px solid rgba(255,255,255,.12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 45px 6%;
+  background:
+    radial-gradient(circle at 78% 45%, rgba(31,190,180,.2), transparent 35%),
+    radial-gradient(circle at 15% 10%, rgba(76,105,205,.2), transparent 35%),
+    linear-gradient(125deg,#101a2b,#17283b 55%,#102b36);
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  max-width: 460px;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8ce3d5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .17em;
+  margin-bottom: 22px;
+}
+
+.kickerIcon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  color: #8ce3d5;
+  background: rgba(95,220,202,.13);
+  border: 1px solid rgba(95,220,202,.2);
+}
+
+.content h2 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(32px,3.5vw,47px);
+  line-height: 1.12;
+  letter-spacing: -.045em;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 17px;
+}
+
+.content h2 span {
+  background: linear-gradient(90deg,#83e7d6,#8ebcff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.content p {
+  max-width: 390px;
+  color: #b4c2d1;
+  font-size: 13px;
+  line-height: 1.85;
+  margin: 0 0 22px;
+}
+
+.featureRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.featureRow span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #c5d9df;
+  font-size: 10px;
+}
+
+.featureRow svg {
+  color: #83e7d6;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 19px;
+  border: 0;
+  border-radius: 11px;
+  background: linear-gradient(110deg,#8ce5d5,#a4caff);
+  color: #102b38;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(92,213,196,.23);
+}
+
+.visual {
+  position: relative;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 900px;
+}
+
+.glow {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: rgba(65,205,189,.15);
+  filter: blur(35px);
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(132,225,215,.16);
+  border-radius: 50%;
+  transform: rotate(-25deg);
+}
+
+.orbitOne {
+  width: 310px;
+  height: 180px;
+}
+
+.orbitTwo {
+  width: 250px;
+  height: 290px;
+  transform: rotate(55deg);
+}
+
+.balanceCard {
+  position: absolute;
+  width: 225px;
+  height: 148px;
+  padding: 17px;
+  border-radius: 18px;
+  box-shadow: 0 25px 45px rgba(0,0,0,.32);
+  border: 1px solid rgba(255,255,255,.22);
+  backdrop-filter: blur(12px);
+}
+
+.cardA {
+  top: 43px;
+  left: 0;
+  transform: rotate(-9deg);
+  background: linear-gradient(135deg,#355b72,#203c55);
+  animation: floatA 5s ease-in-out infinite;
+}
+
+.cardB {
+  right: 0;
+  bottom: 37px;
+  transform: rotate(8deg);
+  color: #173a43;
+  background: linear-gradient(135deg,#b8eee0,#75bfc0);
+  animation: floatB 5.5s ease-in-out infinite;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255,255,255,.76);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.cardB .cardTop {
+  color: #315e60;
+}
+
+.amount {
+  margin-top: 13px;
+  color: #fff;
+  font-family: Manrope,sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.cardB .amount {
+  color: #173a43;
+}
+
+.amount small {
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.cardLine {
+  display: flex;
+  gap: 5px;
+  margin-top: 9px;
+}
+
+.cardLine i {
+  width: 27px;
+  height: 4px;
+  border-radius: 5px;
+  background: #8ce5d5;
+}
+
+.cardLine i:nth-child(2) {
+  width: 15px;
+  opacity: .6;
+}
+
+.cardLine i:nth-child(3) {
+  width: 9px;
+  opacity: .35;
+}
+
+.cardFoot {
+  position: absolute;
+  bottom: 13px;
+  left: 17px;
+  color: rgba(255,255,255,.62);
+  font-size: 9px;
+}
+
+.cardB .cardFoot {
+  color: #426b6b;
+}
+
+.tokenIcon {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e7fff7;
+  color: #347e76;
+  font-weight: 900;
+}
+
+.progress {
+  height: 5px;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: rgba(20,60,60,.16);
+}
+
+.progress span {
+  display: block;
+  width: 72%;
+  height: 100%;
+  border-radius: 5px;
+  background: #f5fff9;
+}
+
+.swapButton {
+  position: absolute;
+  z-index: 4;
+  top: 49%;
+  left: 50%;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%,-50%);
+  border: 5px solid #183344;
+  border-radius: 19px;
+  color: #173d48;
+  background: linear-gradient(145deg,#b8fff0,#8dc9ff);
+  box-shadow: 0 12px 28px rgba(0,0,0,.3);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.roundBadge {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 13px;
+  border: 1px solid rgba(132,225,215,.25);
+  border-radius: 30px;
+  color: #a7eee1;
+  background: rgba(19,49,59,.9);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.floatingCoin {
+  position: absolute;
+  left: 8%;
+  bottom: 12%;
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  color: #173b42;
+  background: linear-gradient(145deg,#fff0b7,#d5a64d);
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.sparkle {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  color: #a4f2e5;
+  font-size: 25px;
+}
+
+.sparkleTwo {
+  position: absolute;
+  right: 12%;
+  bottom: 12%;
+  color: #b8d9ff;
+  font-size: 28px;
+}
+
+.bottomNote {
+  position: absolute;
+  left: 6%;
+  right: 5%;
+  bottom: 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #91a9b9;
+  font-size: 9px;
+}
+
+.bottomNote span {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #8ce5d5;
+}
+
+@keyframes floatA {
+  0%,100% { translate: 0 0; }
+  50% { translate: 0 -8px; }
+}
+
+@keyframes floatB {
+  0%,100% { translate: 0 0; }
+  50% { translate: 0 8px; }
+}
+
+@keyframes pulse {
+  0%,100% { scale: 1; }
+  50% { scale: 1.08; }
+}
+
+@media (max-width: 760px) {
+  .banner {
+    grid-template-columns: 1fr;
+    padding: 28px 25px 48px;
+    min-height: 650px;
+  }
+
+  .visual {
+    grid-row: 1;
+    height: 280px;
+    margin-bottom: 12px;
+  }
+
+  .content {
+    grid-row: 2;
+  }
+
+  .balanceCard {
+    scale: .88;
+  }
+
+  .cardA {
+    left: 0;
+    top: 35px;
+  }
+
+  .cardB {
+    right: 0;
+    bottom: 28px;
+  }
+
+  .content h2 {
+    font-size: 35px;
+  }
+
+  .bottomNote {
+    left: 25px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .banner {
+    padding: 22px 19px 48px;
+    min-height: 630px;
+  }
+
+  .visual {
+    height: 250px;
+  }
+
+  .balanceCard {
+    scale: .75;
+  }
+
+  .cardA {
+    left: -22px;
+  }
+
+  .cardB {
+    right: -22px;
+  }
+
+  .content h2 {
+    font-size: 31px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+
+  .featureRow {
+    gap: 10px;
+  }
+
+  .roundBadge {
+    right: -5px;
+  }
+.bottomNote {
+    left: 19px;
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
