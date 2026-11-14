@@ -1,99 +1,24 @@
-# VELOOP Rewards — Promotional Banner Redesign
+# VELOOP Rewards — 3D Banner Experience
 
-A responsive React frontend concept for VELOOP Rewards featuring five promotional banners with a consistent, premium fintech design.
+A responsive React + Vite showcase featuring five VELOOP Rewards experiences with real-time Three.js 3D illustrations.
 
 ## Features
-- Refer & Earn
-- Swap Center
-- Bonus VEs
-- Captcha Tasks
-- Exchange Center
-- Responsive desktop, tablet and mobile layouts
-- Dark navy background with blue, gold and neutral accents
-- Custom CSS illustrations and Lucide icons
-- Interactive hover, focus and active states
-- Reduced-motion accessibility support
-- Reusable React components and CSS Modules
-- Demonstration UI only; no real transactions or guaranteed rewards
+- Five reward cards: Refer & Earn, Swap Center, Bonus VEs, Captcha Tasks, Exchange Center
+- Three.js 3D objects with lighting and subtle motion
+- Responsive desktop and mobile layout
+- Reduced-motion friendly CSS
 
-## Tech Stack
-- React 18
-- Vite 6
-- Bootstrap 5
-- CSS Modules
-- Lucide React
+## Run locally
+1. Install Node.js 18 or newer.
+2. Run `npm install`.
+3. Run `npm run dev`.
+4. Open the local URL printed by Vite.
 
-## Run Locally
+## Production build
+Run `npm run build`. The production output is created in `dist/`.
 
-Requires Node.js 18+ and npm.
+## Deploy on Vercel
+Import this project folder into Vercel. Framework preset: Vite. Build command: `npm run build`. Output directory: `dist`.
 
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL provided by Vite.
-
-## Production Build
-
-```bash
-npm run build
-npm run preview
-```
-
-The production files are generated in `dist/`.
-
-## Deployment
-
-### Vercel
-- Import this GitHub repository into Vercel.
-- Build command: `npm run build`
-- Output directory: `dist`
-- Deploy the project.
-
-### Netlify
-- Import this GitHub repository into Netlify.
-- Build command: `npm run build`
-- Publish directory: `dist`
-- Deploy the project.
-
-## Project Structure
-
-```text
-veloop-rewards-banner-redesign/
-├── App.jsx
-├── App.module.css
-├── ReferEarnBanner.jsx
-├── ReferEarnBanner.module.css
-├── SwapCenterBanner.jsx
-├── SwapCenterBanner.module.css
-├── BonusVEsBanner.jsx
-├── BonusVEsBanner.module.css
-├── CaptchaTasksBanner.jsx
-├── CaptchaTasksBanner.module.css
-├── ExchangeCenterBanner.jsx
-├── ExchangeCenterBanner.module.css
-├── global.css
-├── main.jsx
-├── index.html
-├── package.json
-├── vite.config.js
-├── vercel.json
-├── netlify.toml
-├── .gitignore
-└── README.md
-```
-
-## Interaction and Content Notes
-
-All banners are frontend demonstrations. Reward values are not presented as official offers, and no backend transactions are performed. CTA interactions are illustrative and should be connected to official VELOOP routes if provided.
-
-## Submission Checklist
-- [ ] Production build verified
-- [ ] Desktop and mobile layouts tested
-- [ ] Buttons and navigation tested
-- [ ] Public GitHub repository ready
-- [ ] Live deployment completed
-
-## Author
-Pragati Chitnalli
+## Note
+This is a front-end demonstration. Reward actions and account authentication are visual UI only; no real transactions or backend login are connected.
